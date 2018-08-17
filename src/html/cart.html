@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/flexslider.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Интернет-магазин корейской косметики MiMiMi.market</title>
+</head>
+<body>
+	@@include('templates/header.html',{"cart":true})
+
+	<div class="content-wrap">
+		<main class="main-content cart_main-content">
+			<div class="cart-page-header">
+				<h2 class="cart-title standard-title">Корзина: <span class="cart-products-count">1 товар</span></h2>
+				<button class="one-click-buy-btn" type="button">оформить в 1 клик</button>
+			</div>
+			<table class="cart-table">
+				<colgroup>
+					<col class="cart-table-col-1">
+					<col class="cart-table-col-2">
+					<col class="cart-table-col-3">
+					<col class="cart-table-col-4">
+					<col class="cart-table-col-5">
+				</colgroup>
+				<thead class="cart-table-header">
+					<tr>
+						<th>Фото товара</th>
+						<th>Наименование товара</th>
+						<th>Количество</th>
+						<th>Цена</th>
+						<th><a class="clear-cart-link clear-link" href="#">Очистить корзину</a></th>
+					</tr>
+				</thead>
+				<tbody class="cart-table-content">
+					<tr class="cart-table-row">
+						<td class="cart-table-cell cart-table-cell_img">
+							<div class="cart-img_wrap">
+								<img class="cart-img" src="img/product-1.jpg" alt="product alt">
+							</div>
+						</td>
+						<td class="cart-table-cell cart-table-cell_name">
+							<div class="product-name_wrap">
+								<a class="cart-product-name" href="detail-page.html">BERRISOM Essential Тоник для лица Essential Boosting Toner</a>
+								<div class="cart-product-chosen-props">
+									<div class="cart-product-prop">
+										<span class="cart-ordering_label">Цвет:
+											<span class="product_chosen-prop">пудровый</span>
+										</span>
+										<span class="product_radio-color_label product-color-pudr">пудровый</span>
+									</div>
+									<div class="cart-product-prop">
+										<span class="cart-ordering_label">Объем:
+											<span class="product_chosen-prop">350мл</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td class="cart-table-cell">
+							<div class="cart-count-change_wrap">
+								<button class="add-to-cart-form_count-btn" type="button">-</button>
+								<label>
+									<input class="add-to-cart-form_input" form="cart-make-order-form" type="number" value="1" required>
+									<span class="screen-readers-only">количество</span>
+								</label>
+								<button class="add-to-cart-form_count-btn" type="button">+</button>
+							</div>
+						</td>
+						<td class="cart-table-cell">
+							<div class="product-price_wrap">
+								<span class="product-price">
+									<span class="price-value">850 &#8381;</span>
+									<span class="price-text">/шт</span>
+								</span>
+							</div>
+						</td>
+						<td class="cart-table-cell cart-table-cell_clear">
+							<a class="remove-from-cart-link clear-link" href="#">удалить из корзины</a>
+						</td>
+					</tr>
+					<tr class="cart-table-row">
+						<td class="cart-table-cell cart-table-cell_img">
+							<div class="cart-img_wrap">
+								<img class="cart-img" src="img/product-3.jpg" alt="product alt">
+							</div>
+						</td>
+						<td class="cart-table-cell cart-table-cell_name">
+							<div class="product-name_wrap">
+								<a class="cart-product-name" href="detail-page.html">Dual Firming Modeling Mask Refill (1kg) Dual Firming Modeling Mask Refill (1kg) Dual Firming Modeling Mask Refill (1kg)</a>
+								<div class="cart-product-chosen-props">
+									<div class="cart-product-prop">
+										<span class="cart-ordering_label">Цвет:
+											<span class="product_chosen-prop">пудровый</span>
+										</span>
+										<span class="product_radio-color_label product-color-pudr">пудровый</span>
+									</div>
+									<div class="cart-product-prop">
+										<span class="cart-ordering_label">Объем:
+											<span class="product_chosen-prop">1000мл</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td class="cart-table-cell">
+							<div class="cart-count-change_wrap">
+								<button class="add-to-cart-form_count-btn" type="button">-</button>
+								<label>
+									<input class="add-to-cart-form_input" form="cart-make-order-form" type="number" value="6" required>
+									<span class="screen-readers-only">количество</span>
+								</label>
+								<button class="add-to-cart-form_count-btn" type="button">+</button>
+							</div>
+						</td>
+						<td class="cart-table-cell">
+							<div class="product-price_wrap">
+								<span class="product-price">
+									<span class="price-value">100500 &#8381;</span>
+									<span class="price-text">/шт</span>
+								</span>
+							</div>
+						</td>
+						<td class="cart-table-cell cart-table-cell_clear">
+							<a class="remove-from-cart-link clear-link" href="#">удалить из корзины</a>
+						</td>
+					</tr>
+					<tr class="cart-table-row total-sum-row">
+						<td class="cart-table-cell total-sum-text" colspan="3">
+							Итоговая сумма:
+						</td>
+						<td class="cart-table-cell" colspan="2">
+							<div class="product-price_wrap">
+								<span class="product-price">
+									<span class="price-value">
+										<output class="total-sum-value">850</output>
+										&#8381;
+									</span>
+								</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="cart-page-content row">
+				<div class="cart-page-col-1">
+					<h1 class="ordering-title standard-title">Оформление заказа:</h1>
+					<form class="cart-make-order-form" id="cart-make-order-form" action="" method="post">
+						<label class="ordering-label">
+							<input class="ordering-input" type="email" name="email" required>
+							<span class="ordering-label-text">Электронная почта</span>
+						</label>
+						<label class="ordering-label">
+							<input class="ordering-input" type="text" name="name" required>
+							<span class="ordering-label-text">Ваше имя</span>
+						</label>
+						<label class="ordering-label">
+							<input class="ordering-input" type="tel" name="phone" required>
+							<span class="ordering-label-text">Телефон</span>
+						</label>
+						<label class="ordering-label">
+							<div class="ordering-select_wrap" data-required="required">
+								<select class="ordering-select" name="city" required>
+									<option class="ordering-select-option_popup" value="Москва">Москва</option>
+									<option class="ordering-select-option_popup" value="Казань">Казань</option>
+									<option class="ordering-select-option_popup" value="Челябинск">Челябинск</option>
+								</select>
+							</div>
+							<span class="ordering-label-text">Город</span>
+						</label>
+						<label class="ordering-label">
+							<div class="ordering-select_wrap" data-required="required">
+								<select class="ordering-select" name="delivery" required>
+									<option class="ordering-select-option_popup" value="Курьером">Курьером</option>
+									<option class="ordering-select-option_popup" value="Самовывоз">Самовывоз</option>
+									<option class="ordering-select-option_popup" value="Почта России">Почта России</option>
+								</select>
+							</div>
+							<span class="ordering-label-text">Способ доставки</span>
+						</label>
+						<label class="ordering-label">
+							<input class="ordering-input" type="text" name="address" required>
+							<span class="ordering-label-text">Адрес доставки</span>
+						</label>
+						<label class="ordering-label">
+							<div class="ordering-select_wrap" data-required="required">
+								<select class="ordering-select" name="payment" required>
+									<option class="ordering-select-option_popup" value="Наличными">Наличными</option>
+									<option class="ordering-select-option_popup" value="Картой">Картой</option>
+									<option class="ordering-select-option_popup" value="Биткоин">Биткоин</option>
+								</select>
+							</div>
+							<span class="ordering-label-text">Способ оплаты</span>
+						</label>
+						<label class="ordering-label">
+							<input class="ordering-input" type="text" name="comment">
+							<span class="ordering-label-text">Комментарий</span>
+						</label>
+						<div class="summary-info_wrap">
+							<span class="total-sum">
+								<span class="total-order-sum-text">Итого:</span>
+								<output class="total-order-sum" name="total-order-sum">9400</output>
+								&#8381;
+							</span>
+							<label class="privacy-label">
+								<input class="privacy-ckeckbox screen-readers-only" type="checkbox" name="private-data" required>
+								<span class="privacy-label-text">Согласен на обработку персональных данных в соотвествии с <a class="privacy-link" href="#">политикой конфиденциальности</a></span>
+							</label>
+							<input class="ordering-submit-btn site-btn site-btn_purple" type="submit" value="оформить заказ">
+						</div>
+					</form>
+				</div>
+				<div class="cart-page-col-2">
+					<ul class="cart_features-list row">
+						<li class="cart_features-item col-md-12 col-6">
+							<span class="about-us_feature-text cart_feature-text delivery-feature">Быстрая доставка</span>
+						</li>
+						<li class="cart_features-item col-md-12 col-6">
+							<span class="about-us_feature-text cart_feature-text card-payment-feature">Оплата картой</span>
+						</li>
+						<li class="cart_features-item col-md-12 col-6">
+							<span class="about-us_feature-text cart_feature-text original-feature">Оригинальная<br>косметика из Кореии</span>
+						</li>
+						<li class="cart_features-item col-md-12 col-6">
+							<span class="about-us_feature-text cart_feature-text shop-feature">Свой розничный<br>магазин</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+		@@include('templates/recomended-products.html')
+
+		@@include('templates/most-popular-brands.html')
+	</div>
+
+	@@include('templates/footer.html')
+
+	@@include('templates/scripts.html')
+
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript">
+		function getSlidesWidth(){
+			var mw = $('body').innerWidth();
+			var si = $('#recomended-products-slider').innerWidth();
+			if(mw<576)
+				return si;
+			if(mw<768)
+				return si/2;
+			if(mw<992)
+				return si/3;
+			return si/4;
+		}
+
+		$(window).load(function(){
+			$('#recomended-products-slider').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				itemWidth: getSlidesWidth(),
+				itemMargin: 0,
+				controlsContainer: $(".custom-controls-container"),
+				customDirectionNav: $(".custom-navigation a")
+			});
+			recomended_products_slider_init();
+		});
+	</script>
+</body>
+</html>

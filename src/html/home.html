@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Интернет-магазин корейской косметики MiMiMi.market</title>
+</head>
+<body>
+	@@include('templates/header.html',{"index":true})
+
+	<section class="our-features light-blue-bg">
+		<ul class="content-wrap our-features_list list-reset">
+			<li class="our-features_item">
+				<a class="our-features_link feature_delivery" href="#">Бесплатная доставка<br>при заказе от 5000р</a>
+			</li>
+			<li class="our-features_item">
+				<a class="our-features_link feature_original-cosmetics" href="#">Только оригинальная<br>косметика из Кореи</a>
+			</li>
+			<li class="our-features_item gift-item">
+				<a class="our-features_link feature_gifts" href="#">Подарки при любом<br>заказе через сайт</a>
+			</li>
+		</ul>
+	</section>
+
+	<div class="content-wrap">
+		@@include('templates/most-popular-brands.html')
+
+		@@include('templates/most-popular-products.html')
+
+		<section class="most-popular-categories">
+			<h2 class="popular-categories_title standard-title">Самые популярные категории:</h2>
+			<div class="most-popular-categories_wrap site-block_delim">
+				<ul class="most-popular-categories_list row">
+					<li class="most-popular-categories_item col-md-2 col-sm-4 col-6">
+						<a class="catalog-category_link" href="#">
+							<span class="catalog-category_name">Крема для волос и тела</span>
+							<img class="catalog-category_img" src="img/category-1-img.jpg" alt="Крема для волос и тела">
+						</a>
+					</li>
+					<li class="most-popular-categories_item col-md-2 col-sm-4 col-6">
+						<a class="catalog-category_link" href="#">
+							<span class="catalog-category_name">Крема для волос и тела</span>
+							<img class="catalog-category_img" src="img/category-2-img.jpg" alt="Крема для волос и тела">
+						</a>
+					</li>
+					<li class="most-popular-categories_item col-md-2 col-sm-4 col-6">
+						<a class="catalog-category_link" href="#">
+							<span class="catalog-category_name">Крема для волос и тела</span>
+							<img class="catalog-category_img" src="img/category-3-img.jpg" alt="Крема для волос и тела">
+						</a>
+					</li>
+					<li class="most-popular-categories_item col-md-2 col-sm-4 col-6">
+						<a class="catalog-category_link" href="#">
+							<span class="catalog-category_name">Маски для лица</span>
+							<img class="catalog-category_img" src="img/category-4-img.jpg" alt="Крема для волос и тела">
+						</a>
+					</li>
+					<li class="most-popular-categories_item col-md-2 col-sm-4 col-6">
+						<a class="catalog-category_link" href="#">
+							<span class="catalog-category_name">Лаки для волос</span>
+							<img class="catalog-category_img" src="img/category-5-img.jpg" alt="Крема для волос и тела">
+						</a>
+					</li>
+					<li class="most-popular-categories_item col-md-2 col-sm-4 col-6">
+						<a class="catalog-category_link" href="#">
+							<span class="catalog-category_name">Крема для рук и ногтей</span>
+							<img class="catalog-category_img" src="img/category-6-img.jpg" alt="Крема для волос и тела">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="banner-section site-block_delim">
+			<div class="banner-section_inner">
+				<div class="banner-section_long-block">
+					<div class="banner-section-block_inner long-block_gray">
+						<div class="banner_text-wrap">
+							<span class="banner-section_block-title">Маст-Хевы корейской косметики</span>
+							<a class="banner-link_long-block site-btn site-btn_purple" href="№">узнать</a>
+						</div>
+						<div class="banner_img-wrap">
+							<img class="banner-section_long-block_img" src="img/must-have-img.jpg" alt="Маст-Хевы корейской косметики">
+						</div>
+					</div>
+				</div>
+				<div class="banner-section_banner">
+					<div class="banner-section-block_inner">
+						<a class="banner-link" href="#">
+							<img class="banner-img" src="img/banner.jpg" alt="акция такая-то">
+						</a>
+					</div>
+				</div>
+				<div class="banner-section_long-block">
+					<div class="banner-section-block_inner long-block_white">
+						<div class="banner_text-wrap">
+							<span class="banner-section_block-title">Подборка лучшего от нашего магазина</span>
+							<a class="banner-link_long-block site-btn site-btn_purple" href="№">смотреть</a>
+						</div>
+						<div class="banner_img-wrap">
+							<img class="banner-section_long-block_img" src="img/our-best-products-img.jpg" alt="Маст-Хевы корейской косметики">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-us_index">
+			<h1 class="about-us-title_index standard-title">Магазин корейской косметики mimimi</h1>
+			<div class="about-us_index_inner row">
+				<section class="about-us_features col-lg">
+					<ul class="about-us_features-list row">
+						<li class="about-us_features-item col-lg-6 col-md-4 col-6">
+							<span class="about-us_feature-text delivery-feature">Быстрая доставка</span>
+						</li>
+						<li class="about-us_features-item col-lg-6 col-md-4 col-6">
+							<span class="about-us_feature-text pickup-net-feature">Сеть удобных<br>пунктов самовывоза</span>
+						</li>
+						<li class="about-us_features-item col-lg-6 col-md-4 col-6">
+							<span class="about-us_feature-text card-payment-feature">Оплата картой</span>
+						</li>
+						<li class="about-us_features-item col-lg-6 col-md-4 col-6">
+							<span class="about-us_feature-text post-delivery-feature">Доставка почтой<br>России</span>
+						</li>
+						<li class="about-us_features-item col-lg-6 col-md-4 col-6">
+							<span class="about-us_feature-text original-feature">Оригинальная<br>косметика из Кореии</span>
+						</li>
+						<li class="about-us_features-item col-lg-6 col-md-4 col-6">
+							<span class="about-us_feature-text shop-feature">Свой розничный<br>магазин</span>
+						</li>
+					</ul>
+				</section>
+				<article class="about-us_article col-lg">
+					<h2 class="about-us_index-title">О магазине</h2>
+					<p class="about-us_index-paragraph">Сегодня в ассортименте магазина корейской косметики HolySkin представлено свыше 5000 товаров более 50 брендов. Мы регулярно:
+					<br><br>
+					Обновляем каталог товаров: привозим самые интересные новинки.
+					Объявляем о специальных предложениях, которое позволяет приобрести товары со скидкой и получить подарок.
+					Проводим розыгрыши наборов корейской косметики.
+					Высокое качество косметических товаров и оперативная работа компании приятно вас удивит. Приобретая у нас косметику из Кореи, вы получаете отличную продукцию с максимальной выгодой и комфортом.</p>
+				</article>
+			</div>
+		</section>
+
+	</div>
+
+	@@include('templates/footer.html')
+
+	@@include('templates/scripts.html')
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "mimimi.market",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://randomnf@bitbucket.org/randomnf/mimimi.market.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/randomnf/mimimi.market#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^3.10.0",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-rename": "^1.4.0"
+  }
+}

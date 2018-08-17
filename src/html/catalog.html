@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Интернет-магазин корейской косметики MiMiMi.market</title>
+</head>
+<body>
+	@@include('templates/header.html')
+
+	<div class="content-wrap main-content_wrap">
+		<div class="row">
+			<section class="filter-column col-md-4 col-lg-3">
+				<form class="filter" action="" method="get">
+					<h2 class="filter-title filter-group-title">Фильтр</h2>
+					<div class="filter_inner filter-closed">
+						<fieldset class="filter-group price-group">
+							<legend class="filter-group-title">Цена</legend>
+							<div class="filterp-group-content">
+								тут ползунок
+							</div>
+						</fieldset>
+						<fieldset class="filter-group group-closed">
+							<legend class="filter-group-title">Бренд</legend>
+							<label class="filter-label">
+								<input class="filter-checkbox" type="checkbox" name="brand-id" value="123">
+								<span class="filter-label-text">The Saem</span>
+								<span class="products-count">24</span>
+							</label>
+							<label class="filter-label">
+								<input class="filter-checkbox" type="checkbox" name="brand-id" value="567">
+								<span class="filter-label-text">Nature republic</span>
+								<span class="products-count">53</span>
+							</label>
+							<label class="filter-label">
+								<input class="filter-checkbox" type="checkbox" name="brand-id" value="456">
+								<span class="filter-label-text">the face shop</span>
+								<span class="products-count">2</span>
+							</label>
+						</fieldset>
+						<fieldset class="filter-group group-closed">
+							<legend class="filter-group-title">Тип кожи</legend>
+							<label class="filter-label">
+								<input class="filter-checkbox" type="checkbox" name="skin-type" value="0">
+								<span class="filter-label-text">Все типы кожи</span>
+								<span class="products-count">194</span>
+							</label>
+							<label class="filter-label">
+								<input class="filter-checkbox" type="checkbox" name="skin-type" value="5">
+								<span class="filter-label-text">Комбинированная</span>
+								<span class="products-count">53</span>
+							</label>
+							<label class="filter-label">
+								<input class="filter-checkbox" type="checkbox" name="skin-type" value="6">
+								<span class="filter-label-text">жирная</span>
+								<span class="products-count">2</span>
+							</label>
+							<label class="filter-label">
+								<input class="filter-checkbox" type="checkbox" name="skin-type" value="6">
+								<span class="filter-label-text">сухая</span>
+								<span class="products-count">10</span>
+							</label>
+						</fieldset>
+						<fieldset class="filter-group group-closed">
+							<legend class="filter-group-title">SPF (Солнцезащитный фактор)</legend>
+							<label class="filter-label">
+								<input class="filter-checkbox" type="checkbox" name="spf" value="1">
+								<span class="filter-label-text">Высокий</span>
+								<span class="products-count">24</span>
+							</label>
+							<label class="filter-label">
+								<input class="filter-checkbox" type="checkbox" name="spf" value="2">
+								<span class="filter-label-text">Ниже чем высокий уровень как то так</span>
+								<span class="products-count">2</span>
+							</label>
+						</fieldset>
+						<input class="filter-submit-btn site-btn site-btn_purple" type="submit" value="применить">
+					</div>
+				</form>
+				<div class="promo-action">
+					<a class="promo-action_link" href="#">
+						<img class="promo-action_img" src="img/promo-action-1.jpg" alt="Акция: скидки до 50%">
+					</a>
+				</div>
+			</section>
+			<main class="main-content col-md-8 col-lg-9">
+				<h1 class="catalog-section-title standard-title">Уход за кожей</h1>
+				<p class="catalog-section-anounce">Современные косметические средства способны решить любые проблемы кожи – сухость или чрезмерную жирность, воспаления или угревую сыпь, шелушения и прочее. Уход за телом – комплексная процедура, которую необходимо поддерживать ежедневно.</p>
+				<div class="catalog-content">
+					<div class="sotring-controls_wrap">
+						<span class="sotring-title">Сортировать по</span>
+						<ul class="sotring-controls list-reset">
+							<li class="sotring-controls-item">
+								<a class="sorting-link" href="#">новизне</a>
+								<ul class="sotring_asc-desc list-reset">
+									<li>
+										<a class="sorting-link asc-link" href="#">по возрастанию</a>
+									</li>
+									<li>
+										<a class="sorting-link desc-link" href="#">по убыванию</a>
+									</li>
+								</ul>
+							</li>
+							<li class="sotring-controls-item">
+								<a class="sorting-link" href="#">цене</a>
+								<ul class="sotring_asc-desc list-reset">
+									<li>
+										<a class="sorting-link asc-link" href="#">по возрастанию</a>
+									</li>
+									<li>
+										<a class="sorting-link desc-link" href="#">по убыванию</a>
+									</li>
+								</ul>
+							</li>
+							<li class="sotring-controls-item">
+								<a class="sorting-link desc-link active-sort" href="#">названию</a>
+								<ul class="sotring_asc-desc list-reset">
+									<li>
+										<a class="sorting-link asc-link" href="#">по возрастанию</a>
+									</li>
+									<li>
+										<a class="sorting-link desc-link active-sort" href="#">по убыванию</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="paginator_wrap">
+							<ul class="paginator list-reset">
+								<li class="paginator-item">
+									<a class="paginator-link" href="#">&#171;</a>
+								</li>
+								<li class="paginator-item">
+									<a class="paginator-link" href="#">1</a>
+								</li>
+								<li class="paginator-item">
+									<a class="paginator-link" href="#">2</a>
+								</li>
+								<li class="paginator-item">
+									<a class="paginator-link" href="#">&#187;</a>
+								</li>
+								<li class="paginator-item">
+									<a class="paginator-link" href="#">Все</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					@@include('templates/catalog-products.html')
+
+					<div class="sotring-controls_wrap controls-bottom">
+						<span class="sotring-title">Сортировать по</span>
+						<ul class="sotring-controls list-reset">
+							<li class="sotring-controls-item">
+								<a class="sorting-link" href="#">новизне</a>
+								<ul class="sotring_asc-desc list-reset">
+									<li>
+										<a class="sorting-link asc-link" href="#">по возрастанию</a>
+									</li>
+									<li>
+										<a class="sorting-link desc-link" href="#">по убыванию</a>
+									</li>
+								</ul>
+							</li>
+							<li class="sotring-controls-item">
+								<a class="sorting-link" href="#">цене</a>
+								<ul class="sotring_asc-desc list-reset">
+									<li>
+										<a class="sorting-link asc-link" href="#">по возрастанию</a>
+									</li>
+									<li>
+										<a class="sorting-link desc-link" href="#">по убыванию</a>
+									</li>
+								</ul>
+							</li>
+							<li class="sotring-controls-item">
+								<a class="sorting-link desc-link active-sort" href="#">названию</a>
+								<ul class="sotring_asc-desc list-reset">
+									<li>
+										<a class="sorting-link asc-link" href="#">по возрастанию</a>
+									</li>
+									<li>
+										<a class="sorting-link desc-link active-sort" href="#">по убыванию</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="paginator_wrap">
+							<ul class="paginator list-reset">
+								<li class="paginator-item">
+									<a class="paginator-link" href="#">&#171;</a>
+								</li>
+								<li class="paginator-item">
+									<a class="paginator-link" href="#">1</a>
+								</li>
+								<li class="paginator-item">
+									<a class="paginator-link" href="#">2</a>
+								</li>
+								<li class="paginator-item">
+									<a class="paginator-link" href="#">&#187;</a>
+								</li>
+								<li class="paginator-item">
+									<a class="paginator-link" href="#">Все</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<article class="catalog-section-article">
+					<p>Шампуни могут обладать разными свойствами.</p>
+					<ul>
+						<li>Питательные и увлажняющие – идеальный вариант для ослабленных и тусклых волос.</li>
+						<li>Антивозрастные – интенсивно восстанавливают локоны и волосяные луковицы.</li>
+						<li>Для вьющихся и пушистых волос – способствуют выпрямлению.</li>
+						<li>Лечебные – решают конкретную проблему.</li>
+						<li>Также в ассортименте есть освежающие шампуни, которые устраняют перхоть, избавляют от сухости и зуда.</li>
+					</ul>
+					<h2>Корейский шампунь</h2>
+					<p>Для создания шампуней корейские косметологи используют только природные компоненты. Это может быть хна, экстракты целебных растений, натуральные масла и прочее. Корейский шампунь с женьшенем интенсивно восстанавливает волосы, возвращает им упругость, делает послушными и шелковистыми.</p>
+					<p>В интернет-магазине корейской косметики можно заказать ухаживающий шампунь для постоянного применения или конкретного лечебного действия – его используют периодически. Южнокорейские бренды выпускают продукцию для сухих, нормальных и жирных волос. Шампунь не только смывает грязь, но и увлажняет локоны и кожу головы, избавляет от блеска, питает луковицы, снимает раздражение, оберегает от ультрафиолета.</p>
+					<h2>Сухой шампунь</h2>
+					<p>Одно из популярных средств в корейской косметологии – сухой шампунь – поможет быстро привести волосы в порядок, очистить локоны и даже придать им желаемый объем. Полноценного ухода такой шампунь не заменит, но в определенных случаях способен стать настоящим спасением. Особенно он незаменим в поездках. Сухой шампунь поможет убрать остатки укладочных средств или освежить челку. Отдельные средства можно использовать для укладки – они придают объем, оказывают матирующий эффект. Сухой шампунь идеально подойдет для волос, склонных к жирности.</p>
+				</article>
+			</main>
+		</div>
+	</div>
+
+	@@include('templates/footer.html')
+
+	@@include('templates/scripts.html')
+</body>
+</html>

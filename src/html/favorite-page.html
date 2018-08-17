@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/flexslider.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Интернет-магазин корейской косметики MiMiMi.market</title>
+</head>
+<body>
+	@@include('templates/header.html')
+
+	<div class="content-wrap main-content_wrap">
+		<main class="main-content">
+			<div class="catalog-content">
+				<div class="favorite-header-wrap">
+					<h1 class="catalog-section-title standard-title">Ваши избранные товары:</h1>
+					<a class="favorite-login-link" href="#">Зарегестрироваться / Войти в личный кабинет</a>
+				</div>
+				<div class="sotring-controls_wrap">
+					<span class="sotring-title">Сортировать по</span>
+					<ul class="sotring-controls list-reset">
+						<li class="sotring-controls-item">
+							<a class="sorting-link" href="#">новизне</a>
+							<ul class="sotring_asc-desc list-reset">
+								<li>
+									<a class="sorting-link asc-link" href="#">по возрастанию</a>
+								</li>
+								<li>
+									<a class="sorting-link desc-link" href="#">по убыванию</a>
+								</li>
+							</ul>
+						</li>
+						<li class="sotring-controls-item">
+							<a class="sorting-link" href="#">цене</a>
+							<ul class="sotring_asc-desc list-reset">
+								<li>
+									<a class="sorting-link asc-link" href="#">по возрастанию</a>
+								</li>
+								<li>
+									<a class="sorting-link desc-link" href="#">по убыванию</a>
+								</li>
+							</ul>
+						</li>
+						<li class="sotring-controls-item">
+							<a class="sorting-link desc-link active-sort" href="#">названию</a>
+							<ul class="sotring_asc-desc list-reset">
+								<li>
+									<a class="sorting-link asc-link" href="#">по возрастанию</a>
+								</li>
+								<li>
+									<a class="sorting-link desc-link active-sort" href="#">по убыванию</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="paginator_wrap">
+						<ul class="paginator list-reset">
+							<li class="paginator-item">
+								<a class="paginator-link" href="#">&#171;</a>
+							</li>
+							<li class="paginator-item">
+								<a class="paginator-link" href="#">1</a>
+							</li>
+							<li class="paginator-item">
+								<a class="paginator-link" href="#">2</a>
+							</li>
+							<li class="paginator-item">
+								<a class="paginator-link" href="#">&#187;</a>
+							</li>
+							<li class="paginator-item">
+								<a class="paginator-link" href="#">Все</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				@@include('templates/favorite-products.html')
+			</div>
+		</main>
+
+		@@include('templates/recomended-products.html')
+
+		@@include('templates/most-popular-brands.html')
+	</div>
+
+	@@include('templates/footer.html')
+
+	@@include('templates/scripts.html')
+
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript">
+		function getSlidesWidth(){
+			var mw = $('body').innerWidth();
+			var si = $('#recomended-products-slider').innerWidth();
+			if(mw<576)
+				return si;
+			if(mw<768)
+				return si/2;
+			if(mw<992)
+				return si/3;
+			return si/4;
+		}
+
+		$(window).load(function(){
+			$('#recomended-products-slider').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				itemWidth: getSlidesWidth(),
+				itemMargin: 0,
+				controlsContainer: $(".custom-controls-container"),
+				customDirectionNav: $(".custom-navigation a")
+			});
+			recomended_products_slider_init();
+		});
+	</script>
+</body>
+</html>
